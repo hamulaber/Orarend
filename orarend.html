@@ -3,41 +3,147 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Példák</title>
+    <title>Órarend</title>
     <style>
+        table {
+            width: 90%;
+            margin: auto;
+        }
+
+        caption {
+            font-size: 2.5em;
+            background-color: darksalmon;
+            color: maroon;
+            border-radius: 15px;
+            box-shadow: lightgray 9px 12px;
+            width: 60%;
+            margin: 0.5cm auto 1em;
+        }
+
+        thead {
+            background-color: lightgreen;
+            color: darkslategray;
+        }
+
+        tbody {
+            background-color: wheat;
+            color: brown;
+         
+        }
+
+        tfoot {
+            background-color: lightskyblue;
+            color: blue;
+        }
+
+        th {
+            font-weight: bolder;
+            width: 11%;
+            height: 1.6em;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+
         td {
-            background-color: goldenrod;
-            width: 1cm;
             height: 1cm;
             text-align: center;
-        }
-        th {
-            background-color: red;
+            
         }
     </style>
 </head>
 
 <body>
-    <!--Itt kezdje a munkát!-->
     <table>
-        <tr>
-            <th>X</th>
-            <th>Hétfő</th>
-            <th>Kedd</th>
-            <th>Szerda</th>
-        </tr>
-        <tr>
-            <th>1.óra</th>
-            <td>matek</td>
-            <td>föci</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <th>2.óra</th>
-            <td>2</td>
-            <th>EZ is TH</th>
-            <td>4</td>
-        </tr>
+        <caption>Heti órarend</caption>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th rowspan="2">Hétfő</th>
+                <th colspan="2">Kedd</th>
+                <th rowspan="2">Szerda</th>
+                <th colspan="2">Csütörtök</th>
+                <th rowspan="2">Péntek</th>
+                <th rowspan="2"></th>
+            </tr>
+            <tr>
+                <th>A hét</th>
+                <th>B hét</th>
+                <th>A hét</th>
+                <th>B hét</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1. óra</th>
+                <td>Matematika</td>
+                <td>Hálózatok elmélet</td>
+                <td rowspan="2">Programozás alapok</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>8:30-9:10</th>
+            </tr>
+
+            <tr>
+                <th>2. óra</th>
+                <td>Fizika</td>
+                <td rowspan="3">IT alapok</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>9:20-10:00</th>
+            </tr>
+
+            <tr>
+                <th>3. óra</th>
+                <td>Irodalom</td>
+                <td rowspan="3">IT alapok</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>10:10-10:50</th>
+            </tr>
+
+            <tr>
+                <th>4. óra</th>
+                <td>Történelem</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>11:05-11:45</th>
+            </tr>
+
+            <tr>
+                <th>5. óra</th>
+                <td>Komplex</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>11:55-12:35</th>
+            </tr>
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th rowspan="2"></th>
+                <th>Közismereti</th>
+                <th colspan="2">Gyakorlati nap</th>
+                <th>Közismereti</th>
+                <th colspan="2">Gyakorlati nap</th>
+                <th>Közismereti</th>
+                <th rowspan="2"></th>
+            </tr>
+            <tr>
+                <th colspan="7">Mechwart András Gépipari és Informatikai Technikum</th>
+            </tr>>
+        </tfoot>
     </table>
 </body>
 
